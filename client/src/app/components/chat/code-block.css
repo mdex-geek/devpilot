@@ -1,0 +1,29 @@
+.code-block .shiki-wrap .shiki {
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+  background: transparent !important;
+  color: var(--shiki-light, var(--foreground));
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  line-height: 1.65;
+  tab-size: 2;
+}
+
+.code-block .shiki-wrap .shiki span {
+  color: var(--shiki-light, inherit);
+}
+
+:root.dark .code-block .shiki-wrap .shiki {
+  color: var(--shiki-dark, var(--foreground));
+}
+
+:root.dark .code-block .shiki-wrap .shiki span {
+  color: var(--shiki-dark, inherit);
+}
+
+.code-block pre,
+.code-block code {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  line-height: 1.65;
+  tab-size: 2;
+}
